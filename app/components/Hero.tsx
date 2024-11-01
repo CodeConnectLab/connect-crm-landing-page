@@ -16,10 +16,16 @@ const Hero = () => {
         viewport={{ once: true }}
       >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-          <Image src={discount} alt="discount" width={32} height={32} priority={true} />
+          <Image
+            src={discount}
+            alt="discount"
+            width={32}
+            height={32}
+            priority={true}
+          />
           <p className="paragraph ml-2">
-            <span className="text-white">20%</span> Discount For{" "}
-            <span className="text-white">1 Month</span> Account
+            Try<span className="text-white"> FREE</span> now{" "}
+            <span className="text-white">No Credit Card</span> required.
           </p>
         </div>
 
@@ -34,12 +40,11 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          Payment Method.
+          CRM Tool.
         </h1>
         <p className="paragraph max-w-[470px] mt-5">
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
+          Supercharge Your Sales with Connect CRM: The All-in-One Solution for
+          Lead Management and Team Performance
         </p>
       </motion.div>
 

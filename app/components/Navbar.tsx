@@ -3,9 +3,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../styles/animations";
 import Image from "next/image";
-import { close, logo, menu } from "../../public";
+import { close, logo, menu, crmLogoFull } from "../../public";
 import { navLinks } from "../constants";
-
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = () => {
       whileInView="show"
       viewport={{ once: true }}
     >
-      <Image src={logo} alt="hoobank" width={124} height={32} loading="eager" />
+      <Image src={crmLogoFull} alt="hoobank" width={200} height={32} loading="eager" className="rounded-full" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
